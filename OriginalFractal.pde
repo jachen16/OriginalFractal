@@ -21,7 +21,6 @@ public void fractal(int x, int y, int z)
   circle(x, y, z);
   if (z > 10)
   {
-    //fill((int)(Math.random()*255), (int)(Math.random()*255),(int)(Math.random()*255));
     fractal(x-z/2, y, z/2);
     fractal(x+z/2, y, z/2);
     fractal(x, y+z/2, z/2);
