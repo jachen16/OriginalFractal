@@ -15,10 +15,10 @@ public void draw()
   background(0);
   stroke(a, b, c);
   fill(d, e, f);
-  fractals(300, 300, 100);
+  circle(300, 300, 100);
 }
 
-public void fractals(int x, int y, int z)
+/*public void fractals(int x, int y, int z)
 {
   circle(x, y, z);
   if (z > 10)
@@ -48,3 +48,4 @@ public void mousePressed()
     redraw();
   }
 }
+*/
