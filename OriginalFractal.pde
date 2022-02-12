@@ -8,19 +8,20 @@ int f;
 public void setup()
 {
   size(600, 600);
+  rectMode(CENTER);
 }
 
 public void draw()
 {
   background(0);
-  stroke(255);
-  //fill(d, e, f);
-  circle(300, 300, 100);
+  stroke(a, b, c);
+  fill(d, e, f);
+  fractals(300, 300, 100);
 }
 
-/*public void fractals(int x, int y, int z)
+public void fractals(int x, int y, int z)
 {
-  circle(x, y, z);
+  ellipse(x, y, z, z);
   if (z > 10)
   {
     fractals(x-z/2, y, z/2);
@@ -48,4 +49,3 @@ public void mousePressed()
     redraw();
   }
 }
-*/
