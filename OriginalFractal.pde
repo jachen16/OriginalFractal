@@ -16,7 +16,7 @@ public void draw()
   background(0);
   stroke(a, b, c);
   fill(d, e, f);
-  fractals(300, 300, 100);
+  fractals(300, 300, 300);
 }
 
 public void fractals(int x, int y, int z)
