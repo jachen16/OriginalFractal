@@ -4,31 +4,35 @@ int c = 255;
 int d;
 int e;
 int f;
+
 public void setup()
 {
   size(600, 600);
   rectMode(CENTER);
 }
+
 public void draw()
 {
   background(0);
   stroke(a, b, c);
   fill(d, e, f);
-  myFractal(300, 300, 300);
+  fractals(300, 300, 100);
 }
-public void myFractal(int x, int y, int len)
+
+public void fractals(int x, int y, int z)
 {
-  circle(x, y, len);
-  if (len > 10)
+  circle(x, y, z);
+  if (z > 10)
   {
-    myFractal(x-len/2, y, len/2);
-    myFractal(x+len/2, y, len/2);
-    myFractal(x, y+len/2, len/2);
-    myFractal(x, y-len/2, len/2);
-    myFractal(x, y-len/2, len/2);
-    myFractal(x, y+len/2, len/2);
+    fractals(x-z/2, y, z/2);
+    fractals(x+z/2, y, z/2);
+    fractals(x, y+z/2, z/2);
+    fractals(x, y-z/2, z/2);
+    fractals(x, y-z/2, z/2);
+    fractals(x, y+z/2, z/2);
   }
 }
+
 public void mousePressed()
 {
   if (mouseButton == LEFT)
@@ -45,4 +49,3 @@ public void mousePressed()
     redraw();
   }
 }
-
