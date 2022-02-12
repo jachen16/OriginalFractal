@@ -12,11 +12,11 @@ public void setup()
 public void draw()
 {
   background(0);
-  stroke(a, b, c);
-  fill(d, e, f);
-  fractal(300, 300, 300);
+//  stroke(a, b, c);
+//  fill(d, e, f);
+//  fractal(300, 300, 300);
 }
-public void fractal(int x, int y, int z)
+/*public void fractal(int x, int y, int z)
 {
   circle(x, y, z);
   if (z > 10)
@@ -44,4 +44,4 @@ public void mousePressed()
     f = (int)(Math.random()*256);
     redraw();
   }
-}
+} */
