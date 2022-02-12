@@ -11,7 +11,7 @@ public void setup()
 }
 public void draw()
 {
-  background(0);
+  background(255);
   stroke(255);
   fill(0);
   fractal(300, 300, 300);
@@ -19,7 +19,7 @@ public void draw()
 public void fractal(int x, int y, int z)
 {
   circle(x, y, z);
-  if (z > 10)
+  /*if (z > 10)
   {
     fractal(x-z/2, y, z/2);
     fractal(x+z/2, y, z/2);
@@ -27,7 +27,7 @@ public void fractal(int x, int y, int z)
     fractal(x, y-z/2, z/2);
     fractal(x, y-z/2, z/2);
     fractal(x, y+z/2, z/2);
-  }
+  }*/
 }
 /*public void mousePressed()
 {
