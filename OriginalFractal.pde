@@ -12,11 +12,11 @@ public void setup()
 public void draw()
 {
   background(0);
-//  stroke(a, b, c);
-//  fill(d, e, f);
-//  fractal(300, 300, 300);
+  stroke(255);
+  fill(0);
+  fractal(300, 300, 300);
 }
-/*public void fractal(int x, int y, int z)
+public void fractal(int x, int y, int z)
 {
   circle(x, y, z);
   if (z > 10)
@@ -29,7 +29,7 @@ public void draw()
     fractal(x, y+z/2, z/2);
   }
 }
-public void mousePressed()
+/*public void mousePressed()
 {
   if (mouseButton == LEFT)
   {
