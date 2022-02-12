@@ -12,24 +12,24 @@ public void setup()
 public void draw()
 {
   background(0);
-  stroke(255);
-  //fill(0);
+  stroke(a, b, c);
+  fill(d, e, f);
   fractal(300, 300, 300);
 }
-public void fractal(int x, int y, int z)
+public void fractal(int x, int y, int len)
 {
-  circle(x, y, z);
-  /*if (z > 10)
+  circle(x, y, len);
+  if (len > 10)
   {
-    fractal(x-z/2, y, z/2);
-    fractal(x+z/2, y, z/2);
-    fractal(x, y+z/2, z/2);
-    fractal(x, y-z/2, z/2);
-    fractal(x, y-z/2, z/2);
-    fractal(x, y+z/2, z/2);
-  }*/
+    fractal(x-len/2, y, len/2);
+    fractal(x+len/2, y, len/2);
+    fractal(x, y+len/2, len/2);
+    fractal(x, y-len/2, len/2);
+    fractal(x, y-len/2, len/2);
+    fractal(x, y+len/2, len/2);
+  }
 }
-/*public void mousePressed()
+public void mousePressed()
 {
   if (mouseButton == LEFT)
   {
@@ -44,4 +44,4 @@ public void fractal(int x, int y, int z)
     f = (int)(Math.random()*256);
     redraw();
   }
-} */
+}
