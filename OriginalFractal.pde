@@ -11,9 +11,9 @@ public void setup()
 }
 public void draw()
 {
-  background(255);
+  background(0);
   stroke(255);
-  fill(0);
+  //fill(0);
   fractal(300, 300, 300);
 }
 public void fractal(int x, int y, int z)
