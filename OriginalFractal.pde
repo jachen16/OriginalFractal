@@ -13,8 +13,8 @@ public void setup()
 public void draw()
 {
   background(0);
-  stroke(a, b, c);
-  fill(d, e, f);
+  stroke(255);
+  //fill(d, e, f);
   circle(300, 300, 100);
 }
 
