@@ -8,7 +8,6 @@ int f;
 public void setup()
 {
   size(600, 600);
-  rectMode(CENTER);
 }
 
 public void draw()
